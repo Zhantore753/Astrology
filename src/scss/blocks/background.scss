@@ -1,0 +1,41 @@
+.background{
+    height: 867px;
+    background-color: #FBF6F6;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 60px;
+    right: 0px;
+}
+
+.background-2{
+    top: 177px;
+    left: 60px;
+    right: 0px;
+    height: 1849px;
+    background-color: #B59797;
+}
+
+@media(max-width: 1300px){
+    .background{
+        left: 20px;
+    }
+}
+
+@media(max-width: 1200px){
+    .background-2{
+        left: 0px;
+        height: 2500px;
+    }
+}
+
+@media(max-width: 768px){
+    .background{
+        left: 8px;
+    }
+
+    .background-2{
+        left: 0px;
+        height: 4500px;
+    }
+}

@@ -1,0 +1,129 @@
+.faq{
+    margin-top: 50px;
+    color: #3C2A2A;
+}
+
+.faq__title{
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 97px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #181B1B;
+    padding-left: 8px;
+}
+
+.faq__list{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__card{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #181B1B;
+    button{
+        font-size: 18px;
+        line-height: 26px;
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FBF6F6;
+        padding: 18px 8px 18px 8px;
+        width: 100%;
+        transition: all 0.3s ease-out;
+        &:hover{
+            font-size: 20px;
+            .faq__svg{
+                transition: all 0.3s ease-out;
+                transform: rotate(45deg);
+                // background: #fbf6f6;
+                background: #b59797;
+                padding: 3px;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                path{
+                    fill: #fbf6f6;
+                }
+            }
+        }
+    }
+
+    
+}
+
+.faq__svg{
+    transition: all 0.3s ease-out;
+    &-active{
+        transform: rotate(45deg);
+    }
+}
+
+.faq__card-answer{
+    box-sizing: content-box;
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    color: #fff;
+    background-color: #B59797;
+    padding: 0 16px 0 16px;
+    font-size: 18px;
+    line-height: 28px;
+    transition: all 0.3s ease-out;
+
+    &-active{
+        padding-top: 16px;
+        padding-bottom: 20px;
+    }
+}
+
+.faq__btns{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        outline: 0 solid #8D6B5D;
+        text-align: center;
+        color: #3C2A2A;
+        border: 2px solid #8D6B5D;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        min-width: 245px;
+        padding: 16px 0 16px 0;
+        transition: 0.1s;
+        margin-bottom: 20px;
+
+        &:hover{
+            outline: 5px solid #8D6B5D;
+        }
+    }
+}
+
+
+@media(max-width: 768px){
+    .faq__list{
+        padding: 0 20px 0 20px;
+    }
+
+    .faq__title{
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .faq__card-answer{
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+@media(max-width: 522px){
+    .faq__btns{
+        justify-content: center;
+    }
+}

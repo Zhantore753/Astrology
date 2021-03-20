@@ -1,0 +1,52 @@
+.aboutedu__subtitle{
+    margin: 10px 68px 0 0px;
+}
+
+.aboutedu{
+    font-size: 18px;
+    line-height: 150%;
+    padding-bottom: 120px;
+    @media(max-width: 768px){
+        padding-bottom: 74px;
+    }
+}
+
+.aboutedu__subtitle-exp{
+    flex-wrap: wrap;
+}
+
+.aboutedu__list-title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+
+    @media(max-width: 768px){
+        font-size: 30px;
+        line-height: 110%;
+    }
+}
+
+.aboutedu__list{
+    list-style: none;
+    counter-reset: my-awesome-counter;
+
+    li {
+        counter-increment: my-awesome-counter;
+        display: flex;
+    }
+    li::before {
+        content: counter(my-awesome-counter);
+        font-size: 50px;
+        margin-right: 20px;
+
+        @media(max-width: 768px){
+            font-size: 36px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.aboutedu__list-item{
+    font-size: 18px;
+    line-height: 150%;
+}

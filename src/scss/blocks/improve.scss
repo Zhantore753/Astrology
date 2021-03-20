@@ -1,0 +1,130 @@
+.improve{
+    background: #FBF6F6;
+}
+
+.improve__inner{
+    padding-top: 140px;
+    padding-bottom: 150px;
+    color: #3C2A2A;
+}
+
+.improve__inner-row{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.improve__list{
+    list-style-type: none;
+    margin-right: 100px;
+    counter-reset: my-awesome-counter;
+
+    li{
+        counter-increment: my-awesome-counter;
+        position: relative;
+        z-index: 1;
+    }
+    
+    li:before{
+        content: counter(my-awesome-counter);
+        z-index: 0;
+        position: absolute;
+        font-size: 300px;
+        top: -48px;
+        left: -14px;
+        color: rgba(83, 73, 70, 0.1);
+    }
+}
+
+.improve__item{
+    padding-bottom: 127px;
+
+    &:last-child{
+        padding-bottom: 0px;
+    }
+}
+
+.improve__item-title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;
+    padding-bottom: 30px;
+}
+
+.improve__item-text{
+    font-size: 18px;
+    line-height: 150%;
+    padding-left: 31px;
+    padding-bottom: 10px;
+}
+
+.improve__item-links{
+    font-size: 20px;
+line-height: 150%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a{
+        color: #3C2A2A;
+        text-decoration: underline;
+    }
+}
+
+.improve__image-bottom{
+    margin-top: -55%;
+    float: right;
+}
+
+@media(max-width: 1024px){    
+    .improve__inner{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .improve__inner-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .improve__image-top{
+        margin-bottom: 56px;
+        max-width: 100%;
+    }
+
+    .improve__list{
+        margin-right: 0;
+    }
+
+    .improve__item{
+        max-width: 100%;
+    }
+
+    .improve__image-bottom{
+        max-width: 100%;
+        margin-top: 64px;
+        float: unset;
+    }
+}
+
+@media(max-width:768px){
+    .improve__inner{
+        padding: 44px 20px 44px 20px;
+    }
+
+    .improve__item{
+        padding-bottom: 51px;
+    }
+
+    .improve__item-title{
+        font-size: 30px;
+        line-height: 110%;
+        padding-bottom: 14px;
+    }
+
+    .improve__item-text{
+        font-size: 18px;
+        line-height: 130%;
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,44 @@
+.programm{
+    background-color: #B59797;
+
+    padding: 116px 0 160px 0;
+    @media(max-width: 768px){
+        padding: 59px 0 80px 0;
+    }
+}
+
+.programm__inner{
+    position: relative;
+    z-index: 3;
+}
+
+.programm__title{
+    color: #FBF6F6;
+    border-color: #FBF6F6;
+}
+
+.programm__card{
+    border-color: #FBF6F6;
+    button{
+        color: #FBF6F6;
+        background-color: #B59797;
+
+        svg{
+            path{fill: #FBF6F6;}
+        }
+
+        &:hover{
+            .faq__svg{
+                background: #fbf6f6;
+                path{
+                    fill: #b59797;
+                }
+            }
+        }
+    }
+}
+
+.programm__card-answer{
+    background-color: #FBF6F6;
+    color: #504949;
+}

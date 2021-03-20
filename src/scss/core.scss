@@ -1,0 +1,26 @@
+body{
+    background-color: #B59797;
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(60,42,42);
+}
+
+.container{
+    max-width: 1160px;
+    width: 100%;
+    min-width: 300px;
+    margin: 0px auto;
+}
+
+@media(max-width: 1200px){
+    .container{
+        padding: 0 28px;
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        padding: 0 8px;
+    }
+}
